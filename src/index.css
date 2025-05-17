@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.ant-select-selector, .ant-select-focused {
+     border: none !important;
+
+}
+
+.ant-select-open {
+     border: none !important;
+     width: 300px;
+}
