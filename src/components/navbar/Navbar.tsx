@@ -9,7 +9,7 @@ const Navbar = () => {
   const menuRef = useRef<HTMLLIElement>(null);
   const languageRef = useRef<HTMLDivElement>(null);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -26,22 +26,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav className="py-4">
       <Container>
         <div className="flex items-center justify-between gap-5">
           <Link to={""}>
             <img src={logo} alt="AL-Muamalat Logo in cite" />
           </Link>
           <ul className="flex items-center justify-between gap-5">
-
             <li>
               <Link to="/">Home</Link>
             </li>
             <li className="relative" ref={menuRef}>
-              
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center text-teal-500 font-medium text-2xl"
+                className="flex items-center  font-medium"
               >
                 Programs <ChevronDown className="ml-1 h-5 w-5" />
               </button>
@@ -109,7 +107,10 @@ const Navbar = () => {
               )}
             </div>
             <div className="border-2 w-[2px] h-[32px] border-[#76767699]"></div>
-            <button onClick={() => navigate("/signin") } className=" capitalize cursor-pointer py-[9px] px-[31px] bg-[#009688] rounded-[8px] text-white">
+            <button
+              onClick={() => navigate("/signin")}
+              className=" capitalize cursor-pointer py-[9px] px-[31px] bg-[#009688] rounded-[8px] text-white"
+            >
               sign in
             </button>
           </div>
