@@ -20,6 +20,7 @@ const Services = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[62px]">
           <Card
+            color="#DEEAFF"
             title={"Islamic Fund Management"}
             text={
               "We assist retail and institutional clients in managing their funds in accordance with Islamic principles, providing practical advice for making halal investments."
@@ -27,6 +28,7 @@ const Services = () => {
             image={islamic}
           />
           <Card
+            color="#D5F6ED"
             title={"International Relations"}
             text={
               "We establish connections with local and international organizations to promote Islamic financial systems and create partnerships that support financial inclusion."
@@ -34,6 +36,7 @@ const Services = () => {
             image={inter}
           />
           <Card
+            color="#FBE2F4"
             title={"Education and Training"}
             text={
               "We offer short-term training courses, seminars, and conferences conducted by experts, along with study tours to leading Islamic financial institutions."
@@ -41,6 +44,7 @@ const Services = () => {
             image={education}
           />
           <Card
+            color="#E2DBF9"
             title={"For Islamic Banks"}
             text={
               "We provide experienced consulting on the establishment and management of Islamic banks and branches. We support the development of competitive financial products and services based on Shariah principles."
@@ -48,6 +52,7 @@ const Services = () => {
             image={finance}
           />
           <Card
+            color="#EBEFF3"
             title={"Islamic Capital Market"}
             text={
               "We provide expert advice on the Islamic capital market, including Shariah-compliant investment products, sukuk issuance, and ethical portfolio management."
@@ -55,6 +60,7 @@ const Services = () => {
             image={market}
           />
           <Card
+            color="#FFEDB6"
             title={"Shariah Compliance Audit"}
             text={
               "We provide Shariah supervision and audit services, examining the compliance of business models with Shariah principles."

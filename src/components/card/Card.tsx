@@ -1,9 +1,10 @@
-type CardProps = { title: string; text: string; image: string };
+type CardProps = { color: string, title: string; text: string; image: string };
 
-const Card = ({ title, text, image }: CardProps) => {
+const Card = ({ color, title, text, image }: CardProps) => {
   return (
     <div
-      className={`bg-[#DEEAFF]  rounded-[20px] p-[30px] flex flex-col items-center justify-center`}
+    style={{ backgroundColor: color }}
+      className={` rounded-[20px] p-[30px] flex flex-col items-center justify-center`}
     >
       <div className="flex items-center gap-5">
         <img src={image} alt={title} />

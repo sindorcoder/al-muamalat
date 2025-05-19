@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { Container } from "../../utils";
 
@@ -10,18 +10,18 @@ const Hero = () => {
   return (
     <div className="bg-[#009688] py-2">
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
+          delay: 2700,
         }}
         loop={true}
       >
         <SwiperSlide>
+
           <Container>
+            
             <div className="flex items-center justify-between gap-[50px]">
               <div>
                 <span className="text-[17px] py-[10px] px-[25px] bg-white rounded-[10px] font-[500] leading-[100%] tracking-[2%]">
