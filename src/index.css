@@ -1,35 +1,46 @@
 @import "tailwindcss";
 
 @font-face {
-     font-family: "open-sans";
-     src: url("./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
-     font-weight: 100 900;
+  font-family: "open-sans";
+  src: url("./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-weight: 100 900;
 }
 @font-face {
-     font-family: "inter";
-     src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
-     font-weight: 100 900;
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  font-weight: 100 900;
 }
 
 .text {
-     font-family: "open-sans";
+  font-family: "open-sans";
 }
 
 .title {
-     font-family: "inter";
+  font-family: "inter";
 }
 
-
-.ant-select-selector, .ant-select-focused {
-     border: none !important;
-
+.ant-select-selector,
+.ant-select-focused {
+  border: none !important;
 }
 
 .ant-select-open {
-     border: none !important;
-     width: 300px;
+  border: none !important;
+  width: 300px;
 }
 
 .active {
-     color: #009688;
+  color: #009688;
+}
+.slick-arrow::before {
+  color: black !important;
+  display: none !important;
+}
+.slick-list {
+     padding: 0  !important;
+}
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+  gap: 70px !important;
 }
