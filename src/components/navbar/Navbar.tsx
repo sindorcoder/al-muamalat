@@ -1,7 +1,6 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/Logo.svg";
 import { Container } from "../../utils";
-import uk from "../../assets/images/uk.svg";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 const Navbar = () => {
@@ -130,14 +129,12 @@ const Navbar = () => {
                   onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                   className="flex items-center gap-2  font-medium text-[15px]"
                 >
-                  <img src={uk} alt="United Kingdom Language Selected" /> ENG{" "}
-                  <ChevronDown className="ml-1 h-5 w-5" />
+                  ENG <ChevronDown className="ml-1 h-5 w-5" />
                 </button>
 
                 {isLanguageOpen && (
                   <div className="absolute top-full left-0 w-[100px] mt-2 border rounded-md bg-white shadow-lg z-10">
                     <button className="flex items-center gap-2 p-2 text-[15px] leading-[100%] tracking-[0%] text-nowrap">
-                      <img src={uk} alt="United Kingdom Language Selected" />{" "}
                       ENG{" "}
                     </button>
                   </div>
