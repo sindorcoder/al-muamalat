@@ -1,66 +1,117 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */ 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./teamCarousel.css";
+import "swiper/swiper-bundle.css";
 
 import melo from "../../assets/images/Melo.png";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Container } from "../../utils";
+import { A11y, Pagination } from "swiper/modules";
+import "../../../node_modules/swiper/modules/pagination.css";
 
-const team = [
-  {
-    name: "Dr. Mezbah Uddin Ahmed",
-    desc: "It is a long established fact that a reader will be distracted by the readable content...",
-    img: melo, // Yoki local rasm
-    social: {
-      instagram: "#",
-      facebook: "#",
-      twitter: "#",
-    },
-  },
-];
 const TeamCarousel = () => {
-  const settings = {
-    centerMode: true,
-    infinite: true,
-    slidesToShow: 1,
-    centerPadding: "0px",
-
-    speed: 500,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
-  };
-
   return (
-    <div className="max-w-6xl mx-auto py-12">
-      <Slider {...settings}>
-        {team.map((member, index): any => (
-          <div key={index} className="px-4">
-            <div
-              className={`transition-all duration-300  rounded-2xl p-6 flex flex-col items-center text-center bg-[#d7f0f0]`}
-            >
-              <img
-                src={member.img}
-                alt={member.name}
-                className="w-32 h-32 object-cover rounded-full mb-4"
-              />
-              <h3 className="text-lg font-bold">{member.name}</h3>
-              <p className="text-sm mt-2">{member.desc}</p>
-              <div className="flex gap-4 mt-4 text-xl justify-center">
-                <Facebook className="text-[#686868] cursor-pointer" />
-                <Instagram className="text-[#686868] cursor-pointer" />
-                <Twitter className="text-[#686868] cursor-pointer" />
+    <>
+      <Swiper
+        modules={[Pagination, A11y]}
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        pagination={true}
+        grabCursor={true}
+        autoplay={{
+          delay: 2700,
+        }}
+        loop={true}
+      >
+        <Container>
+          <SwiperSlide className="slideTeam">
+            <div className="bg-[#D2E6E4] rounded-[10px] flex items-center py-[35px] px-[81px] justify-between gap-[60px]">
+              <div className="w-full  h-full max-w-[300px]">
+                <img
+                  src={melo}
+                  width={"100%"}
+                  height={"100%"}
+                  alt="Dr. Mezbah Uddin Ahmed"
+                />
+              </div>
+              <div className="w-full flex flex-col items-start justify-between gap-[36px]">
+                <h2 className="text-[28px] font-[700] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  Dr. Mezbah Uddin Ahmed
+                </h2>
+                <p className="text-[22px] font-[400] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters.
+                </p>
+                <div className="flex items-center justify-between gap-[40px]">
+                  <Facebook color="#141B34" />
+                  <Instagram color="#141B34" />
+                  <Twitter color="#141B34" />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slideTeam">
+            <div className="bg-[#D2E6E4] rounded-[10px] flex items-center py-[35px] px-[81px] justify-between gap-[60px]">
+              <div className="w-full  h-full max-w-[300px]">
+                <img
+                  src={melo}
+                  width={"100%"}
+                  height={"100%"}
+                  alt="Dr. Mezbah Uddin Ahmed"
+                />
+              </div>
+              <div className="w-full flex flex-col items-start justify-between gap-[36px]">
+                <h2 className="text-[28px] font-[700] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  Dr. Mezbah Uddin Ahmed
+                </h2>
+                <p className="text-[22px] font-[400] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters.
+                </p>
+                <div className="flex items-center justify-between gap-[40px]">
+                  <Facebook color="#141B34" />
+                  <Instagram color="#141B34" />
+                  <Twitter color="#141B34" />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slideTeam">
+            <div className="bg-[#D2E6E4] rounded-[10px] flex items-center py-[35px] px-[81px] justify-between gap-[60px]">
+              <div className="w-full  h-full max-w-[300px]">
+                <img
+                  src={melo}
+                  width={"100%"}
+                  height={"100%"}
+                  alt="Dr. Mezbah Uddin Ahmed"
+                />
+              </div>
+              <div className="w-full flex flex-col items-start justify-between gap-[36px]">
+                <h2 className="text-[28px] font-[700] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  Dr. Mezbah Uddin Ahmed
+                </h2>
+                <p className="text-[22px] font-[400] leading-[100%] tracking-[0%] bold text-[#141B34]">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters.
+                </p>
+                <div className="flex items-center justify-between gap-[40px]">
+                  <Facebook color="#141B34" />
+                  <Instagram color="#141B34" />
+                  <Twitter color="#141B34" />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Container>
+      </Swiper>
+    </>
   );
 };
 

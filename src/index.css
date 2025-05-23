@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "open-sans";
   src: url("./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
@@ -37,10 +41,37 @@
   display: none !important;
 }
 .slick-list {
-     padding: 0  !important;
+  padding: 0 !important;
 }
 .slick-track {
   display: flex !important;
   align-items: center !important;
   gap: 70px !important;
+}
+
+.swiper-button-prev {
+  left: 1080px !important;
+  top: 0px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 20px !important;
+  right: 0 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  background-color: #009688;
+  color: white !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+
+.showCaseSwiper {
+  position: static !important;
+}
+.swiper-button-disabled {
+  background-color: #ecf3f6;
+  color: black !important;
 }
