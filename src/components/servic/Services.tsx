@@ -1,7 +1,7 @@
 import { Container } from "../../utils";
 import Card from "../card/Card";
 import islamic from "../../assets/images/Islamic.svg";
-import inter from "../../assets/images/International.svg"
+import inter from "../../assets/images/International.svg";
 import education from "../../assets/images/Education.svg";
 import finance from "../../assets/images/finance.svg";
 import market from "../../assets/images/market.svg";
