@@ -75,3 +75,33 @@
   background-color: #ecf3f6;
   color: black !important;
 }
+.shadow-sm {
+  box-shadow: rgba(0, 0, 0, 0.16) 10px 20px 30px;
+}
+
+.testimonial-swiper .swiper-pagination {
+  bottom: -50px !important;
+  width: 100% !important;
+}
+.testimonial-swiper {
+  position: static !important;
+}
+.swiper-pagination-bullet-active {
+  width: 35px !important;
+  border-radius: 10px !important;
+  background-color: #009688 !important;
+}
+.swiper-pagination-bullet {
+  transition: all 0.3s ease !important;
+}
+.swiper-pagination {
+  bottom: 20px !important;
+  width: 100% !important;
+}
+.consul-swiper .swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.consul-swiper .swiper-pagination-bullet-active {
+  background-color: #009688 !important;
+}

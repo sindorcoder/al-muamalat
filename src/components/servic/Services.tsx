@@ -4,7 +4,7 @@ import islamic from "../../assets/images/Islamic.svg";
 import inter from "../../assets/images/International.svg"
 import education from "../../assets/images/Education.svg";
 import finance from "../../assets/images/finance.svg";
-// import market from "../../assets/images/market.svg";
+import market from "../../assets/images/market.svg";
 import doc from "../../assets/images/doc.svg";
 
 const Services = () => {
@@ -51,14 +51,14 @@ const Services = () => {
             }
             image={finance}
           />
-          {/* <Card
+          <Card
             color="#EBEFF3"
             title={"Islamic Capital Market"}
             text={
               "We provide expert advice on the Islamic capital market, including Shariah-compliant investment products, sukuk issuance, and ethical portfolio management."
             }
             image={market}
-          /> */}
+          />
           <Card
             color="#FFEDB6"
             title={"Shariah Compliance Audit"}

@@ -10,17 +10,17 @@ import "../../../node_modules/swiper/modules/pagination.css";
 
 const TeamCarousel = () => {
   return (
-    <>
+    <div className="relative">
       <Swiper
         modules={[Pagination, A11y]}
         slidesPerView={"auto"}
         centeredSlides={true}
         pagination={true}
-        grabCursor={true}
         autoplay={{
           delay: 2700,
         }}
         loop={true}
+        className="testimonial-swiper"
       >
         <Container>
           <SwiperSlide className="slideTeam">
@@ -44,7 +44,7 @@ const TeamCarousel = () => {
                   normal distribution of letters.
                 </p>
                 <div className="flex items-center justify-between gap-[40px]">
-                  <Facebook color="#141B34" />
+                  <Facebook color="#141B34"  />
                   <Instagram color="#141B34" />
                   <Twitter color="#141B34" />
                 </div>
@@ -111,7 +111,7 @@ const TeamCarousel = () => {
           </SwiperSlide>
         </Container>
       </Swiper>
-    </>
+    </div>
   );
 };
 
