@@ -14,6 +14,7 @@ const TeamCarousel = () => {
       <Swiper
         modules={[Pagination, A11y]}
         slidesPerView={"auto"}
+        initialSlide={2}
         centeredSlides={true}
         pagination={true}
         autoplay={{
