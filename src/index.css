@@ -49,12 +49,12 @@
   gap: 70px !important;
 }
 
-.swiper-button-prev {
+.showCaseSwiper .swiper-button-prev {
   left: 1080px !important;
   top: 0px !important;
 }
-.swiper-button-next,
-.swiper-button-prev {
+.showCaseSwiper .swiper-button-next,
+.showCaseSwiper .swiper-button-prev {
   top: 20px !important;
   right: 0 !important;
   width: 50px !important;
@@ -68,7 +68,9 @@
   font-size: 20px !important;
 }
 
-.showCaseSwiper {
+.showCaseSwiper,
+.course-swiper,
+.testimonial-swiper {
   position: static !important;
 }
 .swiper-button-disabled {
@@ -76,16 +78,15 @@
   color: black !important;
 }
 .shadow-sm {
-  box-shadow: rgba(0, 0, 0, 0.16) 10px 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.testimonial-swiper .swiper-pagination {
+.testimonial-swiper .swiper-pagination,
+.course-swiper .swiper-pagination {
   bottom: -50px !important;
   width: 100% !important;
 }
-.testimonial-swiper {
-  position: static !important;
-}
+
 .swiper-pagination-bullet-active {
   width: 35px !important;
   border-radius: 10px !important;
@@ -104,4 +105,21 @@
 }
 .consul-swiper .swiper-pagination-bullet-active {
   background-color: #009688 !important;
+}
+
+.course-swiper .swiper-button-prev {
+  left: -80px !important;
+  top: 400px !important;
+}
+.course-swiper .swiper-button-next {
+  right: -80px !important;
+  top: 400px !important;
+}
+.course-swiper .swiper-button-prev,
+.course-swiper .swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  background-color: #009688;
+  color: white !important;
 }

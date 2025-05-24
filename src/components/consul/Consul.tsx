@@ -3,7 +3,7 @@ import { Select, Input, Space, Form, Checkbox, Button } from "antd";
 import { useState } from "react";
 import { Container } from "../../utils";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Pagination } from "swiper/modules";
+import { A11y, Autoplay, Pagination } from "swiper/modules";
 import "../../../node_modules/swiper/modules/pagination.css";
 
 const { Option } = Select;
@@ -48,13 +48,18 @@ const Consul = () => {
         <div className="flex justify-between min-h-[465px]">
           <div className="w-full max-w-[709px] relative h-full min-h-[465px]">
 
+
             <Swiper
               className="h-full consul-swiper"
-              modules={[Pagination, A11y]}
+              modules={[Pagination, A11y, Autoplay]}
               spaceBetween={10}
               pagination={true}
               slidesPerView={1}
               loop={true}
+              autoplay={{
+                delay: 2700,
+                disableOnInteraction: false,
+              }}
 
             >
               <SwiperSlide className="h-full">
@@ -112,6 +117,7 @@ const Consul = () => {
             </Swiper>
           </div>
           <div className="w-full py-[45px] px-[50px] bg-[#F9F7F3]">
+
             <div className="flex flex-col gap-2">
               <h2 className="text-[32px] leading-[100%] tracking-[0%] font-bold title text-[#152032]">
                 Free consultation
@@ -122,10 +128,10 @@ const Consul = () => {
               </p>
             </div>
             <Form
-              name="basic"
               initialValues={{ remember: true }}
               onFinish={onFinish}
               autoComplete="off"
+              className="!mt-[28px]"
             >
               <Space direction="vertical" style={{ width: "100%" }}>
                 <Form.Item

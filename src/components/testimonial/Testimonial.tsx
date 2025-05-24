@@ -24,7 +24,7 @@ const Testimonial = () => {
           slidesPerView={3}
           pagination={true}
           loop={true}
-          className="testimonial-swiper"
+          className="testimonial-swiper !p-2"
           breakpoints={{
             320: {
               slidesPerView: 1,
