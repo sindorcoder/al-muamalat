@@ -47,8 +47,6 @@ const Consul = () => {
       <Container>
         <div className="flex justify-between min-h-[465px]">
           <div className="w-full max-w-[709px] relative h-full min-h-[465px]">
-
-
             <Swiper
               className="h-full consul-swiper"
               modules={[Pagination, A11y, Autoplay]}
@@ -60,7 +58,6 @@ const Consul = () => {
                 delay: 2700,
                 disableOnInteraction: false,
               }}
-
             >
               <SwiperSlide className="h-full">
                 <div className="flex h-full min-h-[465px] flex-col items-start gap-5 p-[45px] bg-[#FAE9D3]">
@@ -117,7 +114,6 @@ const Consul = () => {
             </Swiper>
           </div>
           <div className="w-full py-[45px] px-[50px] bg-[#F9F7F3]">
-
             <div className="flex flex-col gap-2">
               <h2 className="text-[32px] leading-[100%] tracking-[0%] font-bold title text-[#152032]">
                 Free consultation

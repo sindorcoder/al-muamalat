@@ -6,6 +6,7 @@ const ProgramsHero = () => {
       <Container>
         <div>
           <h2 className="text-[40px] leading-[100%] tracking-[0%] font-[700] bold text-center">
+
             International educational programs
           </h2>
 
@@ -15,11 +16,13 @@ const ProgramsHero = () => {
             institutions around the world.
           </p>
           <div className="flex gap-[20px] justify-between mt-[60px]">
+            
             <div className="bg-[#F3F8FF] w-full max-w-[50%] py-[36px] px-[33px]">
               <h3 className="text-[24px] leading-[100%] font-[500] bold tracking-[0%] text-center">
                 What you’ll learn{" "}
               </h3>
               <ul className="flex flex-col gap-[27px] mt-[32px]">
+                
                 <li className="flex items-center gap-[20px] text-[20px] leading-[100%] tracking-[0%] font-[400] text-[#000]">
                   <img
                     src={double}
