@@ -1,11 +1,12 @@
 import { lazy, useEffect } from "react";
 import { useLocation, useRoutes } from "react-router-dom";
+
 const Home = lazy(() => import("../routes/home/Home"));
 const SignIn = lazy(() => import("../routes/signIn/SignIn"));
 const SignUp = lazy(() => import("../routes/signUp/SignUp"));
 const Navbar = lazy(() => import("../components/navbar/Navbar"));
 const Education = lazy(() => import("../routes/education/Education"));
-
+const Contact = lazy(() => import("../routes/contact/Contact"));
 const RoutesController = () => {
   const { pathname } = useLocation();
 
@@ -24,7 +25,11 @@ const RoutesController = () => {
         {
           path: "/education",
           element: <Education />,
-        }
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
       ],
     },
     {
