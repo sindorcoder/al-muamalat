@@ -7,6 +7,8 @@ const SignUp = lazy(() => import("../routes/signUp/SignUp"));
 const Navbar = lazy(() => import("../components/navbar/Navbar"));
 const Education = lazy(() => import("../routes/education/Education"));
 const Contact = lazy(() => import("../routes/contact/Contact"));
+const Profile = lazy(() => import("../routes/profile/Profile"));
+
 const RoutesController = () => {
   const { pathname } = useLocation();
 
@@ -30,6 +32,10 @@ const RoutesController = () => {
           path: "/contact",
           element: <Contact />,
         },
+        {
+          path: "/profile",
+          element: <Profile />,
+        }
       ],
     },
     {
